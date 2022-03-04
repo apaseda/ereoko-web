@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?ereoko\.com
+RewriteRule ^(.*)$ https://ereoko.com/$1 [R,L]
+Rewritecond %{http_host} ^joshfarm.com [nc]
+Rewriterule ^(.*)$ https://joshfarm.com/$1 [r=301,nc]
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?joshfarm\.com
+RewriteRule ^(.*)$ https://joshfarm.com/$1 [R,L]
+
+Order allow,deny
+Allow from all
+Require all granted
