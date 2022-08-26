@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)http://localhost:63342/Finultimate%20App/company-list.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="stndz-style"></style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Companies</title>
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" href="http://localhost:63342/Finultimate%20App/img/fin-fav-icon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://localhost:63342/Finultimate%20App/img/fin-fav-icon.png">
+    <!--font-->
+    <link href="./Companies_files/css" rel="stylesheet">
+    <!-- CSS  -->
+    <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+    <link href="./Companies_files/bootstrap.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="./Companies_files/dope-icons.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="./Companies_files/mdb.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+    <link href="./Companies_files/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="./Companies_files/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="./Companies_files/additions.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="./Companies_files/responsive.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="./Companies_files/util.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- MDBootstrap Datatables  -->
+    <link href="./Companies_files/datatables.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #ECF2FB;
+        }
+    </style>
+<style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
+<body cz-shortcut-listen="true">
+<nav class="white-bg" role="navigation">
+    <div class="nav-wrapper">
+        <a id="logo-container" href="http://localhost:63342/Finultimate%20App/dashboard.html" class="brand-logo hide-on-med-and-down" style="">
+            <img src="./Companies_files/finultimate-logo.svg" width="150px" alt="">
+        </a>
+        <div class="nav-option">
+            <div class="row d-flex">
+                <div class="nav_search_icon" style="padding-top: 20px;">
+                    <a href="http://localhost:63342/Finultimate%20App/company-list.html#" class="material-icons" style="color: black;">search</a>
+                </div>
+                <!--<div class="nav-divider"></div>-->
+                <div class="dropdown-trigger nav-account" data-target="dropdown1">
+                    <a href="http://localhost:63342/Finultimate%20App/company-list.html#" class="nav-account-link">
+                        <img src="./Companies_files/1.jpg" width="50px" height="50px" alt="" style="margin-right: 10px; border-radius: 50%;">
+                        <span class="username">Olanrewaju Bolaji</span>
+                        <!--<img src="img/caret_down.svg" alt="" style="margin-left: 10px;">-->
+                        <span><i class="icon-caret_down" style="display: inline-block; font-size: 8px; margin-left: 5px;"></i></span>
+                    </a>
+                </div><div id="dropdown1" class="dropdown-content dropdown_data" tabindex="0">
+            <div class="row" tabindex="0">
+                <a href="http://localhost:63342/Finultimate%20App/company-list.html" style="display: flex;">
+                    <div class="profile col-md-3">
+                        <img src="./Companies_files/1.jpg" width="50px" height="50px" alt="" style="">
+                    </div>
+                    <div class="profile col-md-9">
+                        <p class="user">Mary Doe</p>
+                        <p class="user-email">MaryDoe@test.com</p>
+                    </div>
+                </a>
+            </div>
+            <div class="divider" tabindex="0"></div>
+            <div class="profile" tabindex="0">
+                <a href="http://localhost:63342/Finultimate%20App/company-list.html#!" class="tenant">ATB Techsoft</a>
+                <a href="http://localhost:63342/Finultimate%20App/company-list.html#" class="change-tenant dropdown_link" style="padding-top: 0 !important;">Change tenant</a>
+            </div>
+            <div class="divider" tabindex="0"></div>
+
+            <div class="profile" tabindex="0">
+                <a href="http://localhost:63342/Finultimate%20App/company-list.html#" class="dropdown_link" style="padding-top: 0 !important;">Credit Management</a>
+                <a href="http://localhost:63342/Finultimate%20App/company-list.html#" class="dropdown_link" style="padding-top: 0 !important;">Products</a>
+            </div>
+            <div class="divider" tabindex="0"></div>
+
+            <div class="profile" tabindex="0">
+                <a href="http://localhost:63342/Finultimate%20App/settings.html" class="dropdown_link" style="padding-top: 0 !important;">Settings</a>
+            </div>
+            <div class="divider" tabindex="0"></div>
+            <div class="profile" tabindex="0">
+                <a href="http://localhost:63342/Finultimate%20App/company-list.html#" class="dropdown_link" style="padding-top: 0 !important;">Logout</a>
+            </div>
+        </div>
+            </div>
+
+            <form class="form-inline">
+                <input class="nav-search" type="text" placeholder="Search" aria-label="Search" style="position: absolute; right: 1px; top: 85px; background: rgb(255, 255, 255); border-bottom-color: white; z-index: 9999; box-shadow: rgba(0, 0, 0, 0.11) 0px 4px 13px; display: none;">
+            </form>
+        </div>
+        <ul class="center hide-on-med-and-down web-nav">
+            <li><a href="http://localhost:63342/Finultimate%20App/company-list.html" class="nav-active">Clients</a></li>
+            <li><a href="http://localhost:63342/Finultimate%20App/company-list.html#">Reports</a></li>
+            <li><a href="http://localhost:63342/Finultimate%20App/company-list.html#">Targets</a></li>
+            <li><a href="http://localhost:63342/Finultimate%20App/company-list.html#">Sales</a></li>
+            <li><a href="http://localhost:63342/Finultimate%20App/company-list.html#">Tickets</a></li>
+            <!--<li><a href="https://twitter.com/twcloudchen" class="circle">-->
+            <!--<img height="128" width="128"-->
+            <!--src="http://www.gravatar.com/avatar/9017a5f22556ae0eb7fb0710711ec125?s=128" alt="Cloud Chen">-->
+            <!--</a></li>-->
+            <!--<li>-->
+            <!--<a href="#" class="circle" style="padding-top: 0 !important; margin: 0 !important;">-->
+            <!--<img src="img/avatar.png" alt="" width="50px" height="50px">-->
+            <!--<span>Tickets</span>-->
+            <!--<img src="img/caret_down.svg" alt="" class="right">-->
+            <!--</a>-->
+            <!--</li>-->
+        </ul>
+        
+
+        <ul id="nav-mobile" class="sidenav">
+            <li>
+                <a href="http://localhost:63342/Finultimate%20App/dashboard.html">
+                    <img src="./Companies_files/finultimate-logo.svg" width="150px" alt="">
+                </a></li>
+            <li class="nav-active"><a href="http://localhost:63342/Finultimate%20App/company-list.html">Clients</a></li>
+            <li><a href="http://localhost:63342/Finultimate%20App/company-list.html#">Reports</a></li>
+            <li><a href="http://localhost:63342/Finultimate%20App/company-list.html#">Targets</a></li>
+            <li><a href="http://localhost:63342/Finultimate%20App/company-list.html#">Sales</a></li>
+            <li><a href="http://localhost:63342/Finultimate%20App/company-list.html#">Tickets</a></li>
+        </ul>
+        <a href="http://localhost:63342/Finultimate%20App/company-list.html#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+<!--<nav class="sub-nav" style="">-->
+<!--<ul class="sub-nav-items text-center">-->
+<!--<li><a href="">Companies</a></li>-->
+<!--<li><a href="">Contacts</a></li>-->
+<!--<li><a href="">Leads</a></li>-->
+<!--</ul>-->
+<!--</nav>-->
+<div class="row" style="margin-left: auto; margin-right: auto">
+    <nav class="sub-nav" style="">
+        <ul class="sub-nav-items text-center">
+            <li><a href="http://localhost:63342/Finultimate%20App/company-list.html">Leads</a></li>
+            <li><a href="http://localhost:63342/Finultimate%20App/company-list.html" class="active">Companies</a></li>
+            <li><a href="http://localhost:63342/Finultimate%20App/company-list.html">Contacts</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="content" style="margin-top: 90px;">
+    <div class="row" style="width: 100%; margin: 0;">
+        <div class="col-xl-2 col-lg-3 col-md-4 content-list left-filter-tab" style="border-right: 4px solid #ECF2FB; width: 80%;">
+
+            <div class="list-filter">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingTop">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link waves-effect waves-light collapsed" type="button" data-toggle="collapse" data-target="#collapseTop" aria-expanded="false" aria-controls="collapseTop">
+                                    Today
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseTop" class="collapse" aria-labelledby="headingTop" data-parent="#accordionExample" style="">
+                            <div class="card-body">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked42">
+                                    <label class="custom-control-label" for="defaultUnchecked42">New <span>(14)</span></label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked43">
+                                    <label class="custom-control-label" for="defaultUnchecked43">Needs Attention</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTop2">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link waves-effect waves-light" type="button" data-toggle="collapse" data-target="#collapseTop2" aria-expanded="true" aria-controls="collapseTop2">
+                                    Needs Attention
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseTop2" class="collapse" aria-labelledby="headingTop2" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked45">
+                                    <label class="custom-control-label" for="defaultUnchecked45">New <span>(14)</span></label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked46">
+                                    <label class="custom-control-label" for="defaultUnchecked46">Needs Attention</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link waves-effect waves-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Profile Fit
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked11">
+                                    <label class="custom-control-label" for="defaultUnchecked11">Yes</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked13">
+                                    <label class="custom-control-label" for="defaultUnchecked13">No</label>
+                                </div>
+                                <br>
+                                <label for="filter1">Profile Score</label>
+                                <div class="d-flex">
+                                    <select class="gen-input browser-default form-control" id="filter1" style="">
+                                        <option value="" disabled="" selected="">=</option>
+                                        <option value="1">&lt;</option>
+                                        <option value="2">&gt;</option>
+                                        <option value="3">=</option>
+                                    </select>
+                                    <input type="text" placeholder="Enter figure" class="browser-default gen-input">
+                                    <!--<p style="margin: 0" class="input-label-perc">%</p>-->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed waves-effect waves-light" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Winning Probability
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <label for="filter2">Winning Probability</label>
+                                <div class="d-flex">
+                                    <select class="gen-input browser-default form-control" id="filter2" style="">
+                                        <option value="" disabled="" selected="">=</option>
+                                        <option value="1">&lt;</option>
+                                        <option value="2">&gt;</option>
+                                        <option value="3">=</option>
+                                    </select>
+                                    <input type="text" placeholder="Enter figure" class="browser-default gen-input">
+                                    <p style="margin: 0" class="input-label-perc">%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed waves-effect waves-light" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Lead Owner
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked6">
+                                    <label class="custom-control-label" for="defaultUnchecked6">Stage Progress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked15">
+                                    <label class="custom-control-label" for="defaultUnchecked15">Stage Progress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked14">
+                                    <label class="custom-control-label" for="defaultUnchecked14">Stage Progress</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading4">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed waves-effect waves-light" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    My Data
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked12">
+                                    <label class="custom-control-label" for="defaultUnchecked12">Stage Progress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked16">
+                                    <label class="custom-control-label" for="defaultUnchecked16">Stage Progress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked17">
+                                    <label class="custom-control-label" for="defaultUnchecked17">Stage Progress</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading5">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed waves-effect waves-light" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    Inbound Emails
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked18">
+                                    <label class="custom-control-label" for="defaultUnchecked18">Stage Progress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked19">
+                                    <label class="custom-control-label" for="defaultUnchecked19">Stage Progress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked20">
+                                    <label class="custom-control-label" for="defaultUnchecked20">Stage Progress</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading6">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed waves-effect waves-light" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                    Lead Source
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked21">
+                                    <label class="custom-control-label" for="defaultUnchecked21">Stage Progress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked22">
+                                    <label class="custom-control-label" for="defaultUnchecked22">Stage Progress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked23">
+                                    <label class="custom-control-label" for="defaultUnchecked23">Stage Progress</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading7">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed waves-effect waves-light" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                    Not Engaged
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked24">
+                                    <label class="custom-control-label" for="defaultUnchecked24">Stage Progress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked25">
+                                    <label class="custom-control-label" for="defaultUnchecked25">Stage Progress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked26">
+                                    <label class="custom-control-label" for="defaultUnchecked26">Stage Progress</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading8">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed waves-effect waves-light" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                    Created on
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked27">
+                                    <label class="custom-control-label" for="defaultUnchecked27">Stage Progress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked28">
+                                    <label class="custom-control-label" for="defaultUnchecked28">Stage Progress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked29">
+                                    <label class="custom-control-label" for="defaultUnchecked29">Stage Progress</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading11">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed waves-effect waves-light" type="button" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                    Purchase Timeline
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked35">
+                                    <label class="custom-control-label" for="defaultUnchecked35">Stage Progress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked36">
+                                    <label class="custom-control-label" for="defaultUnchecked16">Stage Progress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked37">
+                                    <label class="custom-control-label" for="defaultUnchecked37">Stage Progress</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading9">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed waves-effect waves-light" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                    Knowledge on Budget
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked30">
+                                    <label class="custom-control-label" for="defaultUnchecked30">Stage Progress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked31">
+                                    <label class="custom-control-label" for="defaultUnchecked31">Stage Progress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked32">
+                                    <label class="custom-control-label" for="defaultUnchecked32">Stage Progress</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading10">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed waves-effect waves-light" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                    My Data
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked10">
+                                    <label class="custom-control-label" for="defaultUnchecked10">Stage Progress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked33">
+                                    <label class="custom-control-label" for="defaultUnchecked33">Stage Progress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked34">
+                                    <label class="custom-control-label" for="defaultUnchecked34">Stage Progress</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading12">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed waves-effect waves-light" type="button" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                                    My Data
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked39">
+                                    <label class="custom-control-label" for="defaultUnchecked39">Stage Progress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked40">
+                                    <label class="custom-control-label" for="defaultUnchecked40">Stage Progress</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked41">
+                                    <label class="custom-control-label" for="defaultUnchecked41">Stage Progress</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-xl-10 col-lg-9 col-md-8 content-list">
+            <div class="list">
+                <div class="row content-list-header">
+                    <div class="col-md-6 text-left filter-actions-top">
+                        <!--<input type="text" placeholder="Search Companies" class="gen-input browser-default content-list-search">-->
+                        <select class="gen-input browser-default form-control content-list-search">
+                            <option value="" disabled="" selected="">All Companies</option>
+                            <option value="1">0-20</option>
+                            <option value="2">21-80</option>
+                            <option value="3">&gt;80</option>
+                        </select>
+                        <div class="list-actions">
+                            <button class="fin-sec-btn" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ACTIONS <span><img src="./Companies_files/caret_down_blue.svg" width="13" alt=""></span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Email</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">SMS</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Chat</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 content-list-buttons">
+                        <button class="fin-sec-btn">EXPORT</button>
+                        <button class="fin-sec-btn">IMPORT</button>
+                        <button class="fin-pry-btn" style="">ADD COMPANY</button>
+                    </div>
+                </div>
+                <table id="dtBasicExample" class="table table-striped table-bordered table-sm dataTable no-footer" cellspacing="0" width="100%">
+                    <thead>
+                    <tr>
+                        <th class="th-sm">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center checkbox-all" id="defaultUnchecked">
+                                <label class="custom-control-label" for="defaultUnchecked"></label>
+                            </div>
+                        </th>
+                        <th class="th-sm">Company code
+
+                        </th>
+                        <th class="th-sm">Name
+
+                        </th>
+                        <th class="th-sm">Creation date
+
+                        </th>
+                        <th class="th-sm">Update
+
+                        </th>
+                        <th class="th-sm">Profile score
+
+                        </th>
+                        <th class="th-sm">
+                            Action
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="table-row" role="row">
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultUnchecked1">
+                                <label class="custom-control-label" for="defaultUnchecked1"></label>
+                            </div>
+                        </td>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>61</td>
+                        <!--<td style="font-weight: bold !important; cursor: pointer; text-align: center;">-->
+                        <!--<select class="gen-input browser-default form-control  content-list-search" style="border: none !important; font-weight: bold; margin: auto; text-align: center;">-->
+                        <!--<option value="" disabled="" selected="">...</option>-->
+                        <!--<option value="company-within.html">View</option>-->
+                        <!--<option value="2">Edit</option>-->
+                        <!--<option value="3">Delete</option>-->
+                        <!--</select>-->
+                        <!--</td>-->
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <div id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>.</span>
+                                <span>.</span>
+                                <span>.</span>
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-within.html">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultUnchecked2">
+                                <label class="custom-control-label" for="defaultUnchecked2"></label>
+                            </div>
+                        </td>
+                        <td>Garrett Winters</td>
+                        <td>Accountant</td>
+                        <td>Tokyo</td>
+                        <td>63</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <div id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>.</span>
+                                <span>.</span>
+                                <span>.</span>
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-within.html">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultUnchecked3">
+                                <label class="custom-control-label" for="defaultUnchecked3"></label>
+                            </div>
+                        </td>
+                        <td>Ashton Cox</td>
+                        <td>Junior Technical Author</td>
+                        <td>San Francisco</td>
+                        <td>66</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <div id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>.</span>
+                                <span>.</span>
+                                <span>.</span>
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-within.html">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultUnchecked4">
+                                <label class="custom-control-label" for="defaultUnchecked4"></label>
+                            </div>
+                        </td>
+                        <td>Cedric Kelly</td>
+                        <td>Senior Javascript Developer</td>
+                        <td>Edinburgh</td>
+                        <td>22</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <div id="dropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>.</span>
+                                <span>.</span>
+                                <span>.</span>
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink4">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-within.html">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultUnchecked5">
+                                <label class="custom-control-label" for="defaultUnchecked5"></label>
+                            </div>
+                        </td>
+                        <td>Airi Satou</td>
+                        <td>Accountant</td>
+                        <td>Tokyo</td>
+                        <td>33</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <div id="dropdownMenuLink5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>.</span>
+                                <span>.</span>
+                                <span>.</span>
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink5">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-within.html">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked6">
+                                <label class="custom-control-label" for="defaultChecked6"></label>
+                            </div>
+                        </td>
+                        <td>Brielle Williamson</td>
+                        <td>Integration Specialist</td>
+                        <td>New York</td>
+                        <td>61</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <div id="dropdownMenuLink6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>.</span>
+                                <span>.</span>
+                                <span>.</span>
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink6">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-within.html">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked7">
+                                <label class="custom-control-label" for="defaultChecked7"></label>
+                            </div>
+                        </td>
+                        <td>Herrod Chandler</td>
+                        <td>Sales Assistant</td>
+                        <td>San Francisco</td>
+                        <td>59</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;" id="dropdownMenuLink7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink7">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked8">
+                                <label class="custom-control-label" for="defaultChecked8"></label>
+                            </div>
+                        </td>
+                        <td>Rhona Davidson</td>
+                        <td>Integration Specialist</td>
+                        <td>Tokyo</td>
+                        <td>55</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;" id="dropdownMenuLink8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink8">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked21">
+                                <label class="custom-control-label" for="defaultChecked21"></label>
+                            </div>
+                        </td>
+                        <td>Colleen Hurst</td>
+                        <td>Javascript Developer</td>
+                        <td>San Francisco</td>
+                        <td>39</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;" id="dropdownMenuLink9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink9">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked20">
+                                <label class="custom-control-label" for="defaultChecked20"></label>
+                            </div>
+                        </td>
+                        <td>Sonya Frost</td>
+                        <td>Software Engineer</td>
+                        <td>Edinburgh</td>
+                        <td>23</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;" id="dropdownMenuLink10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink10">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked22">
+                                <label class="custom-control-label" for="defaultChecked22"></label>
+                            </div>
+                        </td>
+                        <td>Jena Gaines</td>
+                        <td>Office Manager</td>
+                        <td>London</td>
+                        <td>30</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;" id="dropdownMenuLink11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink11">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked23">
+                                <label class="custom-control-label" for="defaultChecked23"></label>
+                            </div>
+                        </td>
+                        <td>Quinn Flynn</td>
+                        <td>Support Lead</td>
+                        <td>Edinburgh</td>
+                        <td>22</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;" id="dropdownMenuLink12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink12">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked24">
+                                <label class="custom-control-label" for="defaultChecked24"></label>
+                            </div>
+                        </td>
+                        <td>Charde Marshall</td>
+                        <td>Regional Director</td>
+                        <td>San Francisco</td>
+                        <td>36</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;" id="dropdownMenuLink13" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink13">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked25">
+                                <label class="custom-control-label" for="defaultChecked25"></label>
+                            </div>
+                        </td>
+                        <td>Haley Kennedy</td>
+                        <td>Senior Marketing Designer</td>
+                        <td>London</td>
+                        <td>43</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;" id="dropdownMenuLink14" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink14">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked26">
+                                <label class="custom-control-label" for="defaultChecked26"></label>
+                            </div>
+                        </td>
+                        <td>Tatyana Fitzpatrick</td>
+                        <td>Regional Director</td>
+                        <td>London</td>
+                        <td>19</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked27">
+                                <label class="custom-control-label" for="defaultChecked27"></label>
+                            </div>
+                        </td>
+                        <td>Michael Silva</td>
+                        <td>Marketing Designer</td>
+                        <td>London</td>
+                        <td>66</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked28">
+                                <label class="custom-control-label" for="defaultChecked28"></label>
+                            </div>
+                        </td>
+                        <td>Paul Byrd</td>
+                        <td>Chief Financial Officer (CFO)</td>
+                        <td>New York</td>
+                        <td>64</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked29">
+                                <label class="custom-control-label" for="defaultChecked29"></label>
+                            </div>
+                        </td>
+                        <td>Gloria Little</td>
+                        <td>Systems Administrator</td>
+                        <td>New York</td>
+                        <td>59</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked30">
+                                <label class="custom-control-label" for="defaultChecked30"></label>
+                            </div>
+                        </td>
+                        <td>Bradley Greer</td>
+                        <td>Software Engineer</td>
+                        <td>London</td>
+                        <td>41</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked31">
+                                <label class="custom-control-label" for="defaultChecked31"></label>
+                            </div>
+                        </td>
+                        <td>Dai Rios</td>
+                        <td>Personnel Lead</td>
+                        <td>Edinburgh</td>
+                        <td>35</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked32">
+                                <label class="custom-control-label" for="defaultChecked32"></label>
+                            </div>
+                        </td>
+                        <td>Jenette Caldwell</td>
+                        <td>Development Lead</td>
+                        <td>New York</td>
+                        <td>30</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked33">
+                                <label class="custom-control-label" for="defaultChecked33"></label>
+                            </div>
+                        </td>
+                        <td>Yuri Berry</td>
+                        <td>Chief Marketing Officer (CMO)</td>
+                        <td>New York</td>
+                        <td>40</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked34">
+                                <label class="custom-control-label" for="defaultChecked34"></label>
+                            </div>
+                        </td>
+                        <td>Caesar Vance</td>
+                        <td>Pre-Sales Support</td>
+                        <td>New York</td>
+                        <td>21</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked35">
+                                <label class="custom-control-label" for="defaultChecked35"></label>
+                            </div>
+                        </td>
+                        <td>Doris Wilder</td>
+                        <td>Sales Assistant</td>
+                        <td>Sidney</td>
+                        <td>23</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked36">
+                                <label class="custom-control-label" for="defaultChecked36"></label>
+                            </div>
+                        </td>
+                        <td>Angelica Ramos</td>
+                        <td>Chief Executive Officer (CEO)</td>
+                        <td>London</td>
+                        <td>47</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">View</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Edit</a>
+                                <a class="dropdown-item" href="http://localhost:63342/Finultimate%20App/company-list.html#">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked37">
+                                <label class="custom-control-label" for="defaultChecked37"></label>
+                            </div>
+                        </td>
+                        <td>Gavin Joyce</td>
+                        <td>Developer</td>
+                        <td>Edinburgh</td>
+                        <td>42</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked38">
+                                <label class="custom-control-label" for="defaultChecked38"></label>
+                            </div>
+                        </td>
+                        <td>Jennifer Chang</td>
+                        <td>Regional Director</td>
+                        <td>Singapore</td>
+                        <td>28</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked39">
+                                <label class="custom-control-label" for="defaultChecked39"></label>
+                            </div>
+                        </td>
+                        <td>Brenden Wagner</td>
+                        <td>Software Engineer</td>
+                        <td>San Francisco</td>
+                        <td>28</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked19">
+                                <label class="custom-control-label" for="defaultChecked19"></label>
+                            </div>
+                        </td>
+                        <td>Fiona Green</td>
+                        <td>Chief Operating Officer (COO)</td>
+                        <td>San Francisco</td>
+                        <td>48</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input text-center" id="defaultChecked1">
+                                <label class="custom-control-label" for="defaultChecked1"></label>
+                            </div>
+                        </td>
+                        <td>Shou Itou</td>
+                        <td>Regional Marketing</td>
+                        <td>Tokyo</td>
+                        <td>20</td>
+                        <td style="font-weight: bold !important; cursor: pointer; text-align: center;">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                        </td>
+                    </tr>
+                    
+                </tbody></table>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--ai character-->
+<div class="ai-chat-card d-none">
+    <div class="ai-chat-card-top">
+        <p>Sade is here for you</p>
+        <p class="chat-close right">x</p>
+        <!--<a href="#" class="chat-close right">x</a>-->
+    </div>
+    <div id="live-chat">
+
+
+        <div class="chat">
+
+            <div class="chat-history">
+
+                <div class="chat-message clearfix">
+
+                    <img src="./Companies_files/people" alt="" width="32" height="32">
+
+                    <div class="chat-message-content clearfix">
+
+                        <span class="chat-time">13:35</span>
+
+                        <h5>John Doe</h5>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, explicabo quasi ratione odio
+                            dolorum harum.</p>
+
+                    </div> <!-- end chat-message-content -->
+
+                </div> <!-- end chat-message -->
+
+                <hr>
+
+                <div class="chat-message clearfix">
+
+                    <img src="./Companies_files/2c0ad52fc5943b78d6abe069cc08f320.jpeg" alt="" width="32" height="32">
+
+                    <div class="chat-message-content clearfix">
+
+                        <span class="chat-time">13:37</span>
+
+                        <h5>Marco Biedermann</h5>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, nulla accusamus magni
+                            vel debitis numquam qui tempora rem voluptatem delectus!</p>
+
+                    </div> <!-- end chat-message-content -->
+
+                </div> <!-- end chat-message -->
+
+                <hr>
+
+                <div class="chat-message clearfix">
+
+                    <img src="./Companies_files/people" alt="" width="32" height="32">
+
+                    <div class="chat-message-content clearfix">
+
+                        <span class="chat-time">13:38</span>
+
+                        <h5>John Doe</h5>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+
+                    </div> <!-- end chat-message-content -->
+
+                </div> <!-- end chat-message -->
+
+                <hr>
+
+            </div> <!-- end chat-history -->
+
+            <p class="chat-feedback">Your partner is typing…</p>
+
+            <form action="http://localhost:63342/Finultimate%20App/company-list.html#" method="post">
+
+                <fieldset>
+
+                    <input type="text" placeholder="Type your message…" autofocus="">
+                    <input type="hidden">
+
+                </fieldset>
+
+            </form>
+
+        </div> <!-- end chat -->
+
+    </div> <!-- end live-chat -->
+
+</div>
+<div class="ai-character">
+    <img src="./Companies_files/ai-character.svg" alt="">
+</div>
+<div class="ai-blockquote" style="display: none;">
+    <blockquote>
+
+        <div class="arrow-left"></div> <!--edit to arrow-left or arrow-right -->
+    </blockquote>
+</div>
+
+
+<!--  Scripts-->
+<!--<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
+<script src="./Companies_files/jquery-3.3.1.min.js.download"></script>
+<script src="./Companies_files/popper.min.js.download"></script>
+<script src="./Companies_files/bootstrap.min.js.download"></script>
+<script src="./Companies_files/mdb.js.download"></script><div class="hiddendiv common"></div>
+<script src="./Companies_files/materialize.js.download"></script>
+<script src="./Companies_files/init.js.download"></script>
+<script src="./Companies_files/additions.js.download"></script>
+<!-- MDBootstrap Datatables  -->
+<script type="text/javascript" src="./Companies_files/datatables.min.js.download"></script>
+<!--<script type="text/javascript" src="js/jquery-ui.min.js"></script>-->
+<script>
+</script>
+
+
+<div class="sidenav-overlay"></div><div class="drag-target"></div></body></html>

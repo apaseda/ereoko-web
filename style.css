@@ -2484,11 +2484,14 @@ textarea.form-control {
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
+  
   .home-thumbnail img {
     max-height: 111px !important;
   }
+}
 
+@media only screen and (min-width: 768px) {
   .product-thumbnail img {
     max-height: 243px;
   }
